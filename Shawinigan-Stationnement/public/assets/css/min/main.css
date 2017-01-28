@@ -114,7 +114,7 @@ section#features .media.active .media-heading {
   color: #66cc99;
 }
 section#reviews {
-  background: url("../img/eco/bk-eco.jpg");
+  background: url("../../img/eco/bk-eco.jpg");
 }
 section#reviews header {
   color: #ffffff;
@@ -182,7 +182,7 @@ section#demo header h1:after {
 }
 /* Get app Section */
 section#getApp {
-  background: url("../img/eco/bk-eco-ga.jpg");
+  background: url("../../img/eco/bk-eco-ga.jpg");
 }
 section#getApp header {
   color: #ffffff;
