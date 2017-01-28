@@ -1,32 +1,37 @@
 import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
 
-import './main.html';
+const MY_ACCESS_TOKEN = pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4MWN0dSJ9.tVz5AQpyWKIxqX_x-FHRpg;
+const MY_MAP_ID = lacarte;
 
-
-Router.route('/', function () {
-  this.render('Home');
+Mapbox.load({
+  gl: true
 });
 
-Router.route('/App', function () {
-  this.render('App');
+// Basic
+Meteor.startup(function(){
+    Mapbox.load({
+        plugins: ['minimap', 'markercluster']
+    });
+});
+
+Deps.autorun(function () {
+  if (Mapbox.loaded()) {
+    L.mapbox.accessToken = MY_ACCESS_TOKEN;
+    var map = L.mapbox.map('map', MY_MAP_ID);
+  }
 });
 
 
-Template.hello.onCreated(function() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
+// Using a template's rendered callback
+Meteor.startup(function(){
+    Mapbox.load();
 });
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
+Template.Map.rendered = function () {
+    this.autorun(function () {
+        if (Mapbox.loaded()) {
+            L.mapbox.accessToken = TOKEN;
+            var map = L.mapbox.map('map', MAP_ID);
+        }
+    });
+};
