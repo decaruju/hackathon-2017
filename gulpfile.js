@@ -19,7 +19,7 @@ var plugins = {
 // Define path of project
 var basePaths = {
   src: "assets/",
-  dest: "public/assets/"
+  dest: "Shawinigan-Stationnement/public/assets/"
 };
 
 var paths = {
@@ -40,7 +40,6 @@ gulp.task("less", function() {
   require('./gulp-tasks/application-less.js')(gulp, plugins, {
       src: appFiles.styles,
       name: "main.css",
-      dest: paths.styles.dest,
       cleanCSS: gutil.env.env === 'prod'
     });
 });
