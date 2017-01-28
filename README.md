@@ -30,10 +30,9 @@
 
 ## Stationnement
 - data Stationnement
-- catacates
-- francis brisson
-- maison de la culture
-- voiture élec
+- cataractes
+- maison de la culture francis brisson
+- voiture électrique
 
 # Shawi con au digihub
 
