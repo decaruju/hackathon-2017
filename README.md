@@ -1,19 +1,20 @@
 # Hackathon
 ## IDEs
 - Visual studio (beurk)
-- Visual studio code 
+- Visual studio code
 - Webstorm (Jetbrains)
 - Vim (NONONNONONONONONO)
+- Atom
 
 ## Librairies
 - Meteor
 - OpenLayers
-
+- Template: http://www.scoopthemes.com/templates/Oleose-Theme/
 ## Idées
 - ???
 
 ## TODO
-- Trouver une idée 
+- Trouver une idée
 - get Rekt
 
 ## Done
@@ -36,10 +37,10 @@
 
 # Shawi con au digihub
 
-staionnements plus intéressant, 
+staionnements plus intéressant,
 parking à intére^t touristiques
 parking pour vélo
-parking de céahrge touristique 
+parking de céahrge touristique
 pistes cyclables
 
 staionnement avec bornes/ compatibilité
@@ -47,5 +48,3 @@ privé/public
 
 
 staionnements vélo
-
-
