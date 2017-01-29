@@ -4031,9 +4031,9 @@ export const elec = {
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
-            "cost": "1.00",
             "properties": {
-
+                "description": "Une belle borne<br> 1$/hre",
+                "icon": "music"
             },
             "geometry": {
                 "type": "Point",
@@ -4044,9 +4044,9 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "cost": "1.00",
             "properties": {
-
+                "description": "Une belle borne<br> 1$/hre",
+                "icon": "music"
             },
             "geometry": {
                 "type": "Point",
@@ -4057,9 +4057,9 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "cost": "1.00",
             "properties": {
-
+                "description": "Une belle borne<br> 1$/hre",
+                "icon": "music"
             },
             "geometry": {
                 "type": "Point",
@@ -4070,9 +4070,9 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "cost": "1.00$ par heure",
             "properties": {
-
+                "description": "Une belle borne<br> 1$/hre",
+                "icon": "music"
             },
             "geometry": {
                 "type": "Point",

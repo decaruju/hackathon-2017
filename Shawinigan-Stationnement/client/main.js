@@ -10,11 +10,19 @@ var buttons = [false, false, false]
 var radius = 20;
 var zones = f.getAreaStatus();
 
+var popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+});
+
 function getPosition() {
     coord = Geolocation.latLng();
     console.log(coord);
     if (coord != null)
         return {
+            "properties":{
+              "description": "Vous etes ici."
+            }
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
         };
@@ -121,6 +129,23 @@ Meteor.startup(function() {
                 "circle-color": "green"
             }
         });
+    });
+
+    map.on('mousemove', function(e) {
+        var features = map.queryRenderedFeatures(e.point, { layers: ['elec'] });
+
+        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+        if (!features.length) {
+            popup.remove();
+            return;
+        }
+
+        var feature = features[0];
+
+        popup.setLngLat(feature.geometry.coordinates)
+            .setHTML(feature.properties.description)
+            .addTo(map);
     });
 
     Template.body.events({
