@@ -8,14 +8,31 @@
     <style>
         body { margin:0; padding:0; }
         #map { position: absolute; top:0; bottom:0; height:100%; width:100%; }
+
+        .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+    
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
     </style>
 </head>
 <body>
-    <div class="row">
-        <div class="col-md-3">
-stuff
+    <div class="flex-container">
+        <div class="flex-item">
+         <p>stuff</p> 
         </div>
-        <div class="col-md-9">
+        <div class="flex-item">
             {{> map}}
         </div>
     </div>

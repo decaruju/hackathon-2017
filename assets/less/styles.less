@@ -17,11 +17,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color:@darkGrey;
 }
 header {
+    #nav.affix {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index:10;
+    }
+
     .navbar-default {
         background: none;
         border:none;
         padding-top: 40px;
         padding-bottom: 20px;
+        margin-bottom: 0;
         .transitionAll;
         ul.navbar-nav {
             padding-top: 55px;
