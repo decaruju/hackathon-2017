@@ -32,7 +32,26 @@ function getPosition() {
         };
 }
 
+function menuclose() {
+  $("#menu").on("click",function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  console.log("aaa")
+  var smallClass = "hide-menu";
+  var fgroup = $(".flex-group");
+  console.log(fgroup)
+  if(fgroup.hasClass(smallClass)) {
+    fgroup.removeClass(smallClass);
+    $("#menu a").text("X")
+  } else {
+   fgroup.addClass(smallClass);
+   $("#menu a").text(">>");
+  }
+  });
+}
+
 Meteor.startup(function() {
+  menuclose();
     var geojson;
     mapboxgl.accessToken = 'pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4MWN0dSJ9.tVz5AQpyWKIxqX_x-FHRpg';
     var bounds = [
@@ -178,7 +197,7 @@ Meteor.startup(function() {
                         map.setPaintProperty(featureToChange.layer.id, "line-color", color)
                         break;
                         //case "elec":
-                        case "position":
+                    case "position":
                         oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
                         map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
                         break;
@@ -192,33 +211,33 @@ Meteor.startup(function() {
             }
 
             switch (feature.layer.source) {
-              case "elec":
-                popup.setLngLat(feature.geometry.coordinates)
-                     .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
-                     .addTo(map);
-                break;
-              case "ruesA":
-              pos = Math.floor(feature.geometry.coordinates.length / 2);
-                  popup.setLngLat(feature.geometry.coordinates[pos])
-                       .setHTML("Zone A<br> status: " + (zones.zoneA ? "Permis" : "Interdit"))
-                       .addTo(map);
-                break;
-              case "ruesB":
-              pos = Math.floor(feature.geometry.coordinates.length / 2);
-                  popup.setLngLat(feature.geometry.coordinates[pos])
-                       .setHTML("Zone B<br> status: " + (zones.zoneB ? "Permis" : "Interdit"))
-                       .addTo(map);
-                break;
-              case "muni":
-                pos = Math.floor(feature.geometry.coordinates[0].length / 2);
+                case "elec":
+                    popup.setLngLat(feature.geometry.coordinates)
+                        .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+                        .addTo(map);
+                    break;
+                case "ruesA":
+                    pos = Math.floor(feature.geometry.coordinates.length / 2);
+                    popup.setLngLat(feature.geometry.coordinates[pos])
+                        .setHTML("<div style:\"align: center\"><strong>Zone A</strong><br> Statut: " + (zones.zoneA ? "Permis" : "Interdit") + "</div>")
+                        .addTo(map);
+                    break;
+                case "ruesB":
+                    pos = Math.floor(feature.geometry.coordinates.length / 2);
+                    popup.setLngLat(feature.geometry.coordinates[pos])
+                        .setHTML("Zone B<br> status: " + (zones.zoneB ? "Permis" : "Interdit"))
+                        .addTo(map);
+                    break;
+                case "muni":
+                    pos = Math.floor(feature.geometry.coordinates[0].length / 2);
                     popup.setLngLat(feature.geometry.coordinates[0][pos])
-                         .setHTML("stationnement municipal")
-                         .addTo(map);
-                break;
-              default:
-                popup.setLngLat([0, 0]) // ICI
-                     .setHTML("feature.stattype")
-                     .addTo(map);
+                        .setHTML("stationnement municipal")
+                        .addTo(map);
+                    break;
+                default:
+                    popup.setLngLat([0, 0]) // ICI
+                        .setHTML("feature.stattype")
+                        .addTo(map);
 
             }
         });
