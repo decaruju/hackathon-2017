@@ -19,8 +19,8 @@ function getPosition() {
     coord = Geolocation.latLng();
     if (coord != null)
         return {
-            "properties":{
-              "description": "Vous etes ici."
+            "properties": {
+                "description": "Vous etes ici."
             },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
@@ -153,7 +153,7 @@ Meteor.startup(function() {
         var feature = features[0];
 
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description +"<br>" +feature.properties.cost + "<br>" + feature.properties.building)
+            .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
             .addTo(map);
     });
 
@@ -161,7 +161,7 @@ Meteor.startup(function() {
   createActionCheckbox("Cacher zone B", "rueB");
   createActionCheckbox("Cacher muni", "muni");
 
-  setInterval(function(){map.getSource('point').setData(getPosition());}, 1000);
+    setInterval(function() { map.getSource('point').setData(getPosition()); }, 1000);
 });
 
 function createActionCheckbox(text, id) {
@@ -171,7 +171,7 @@ function createActionCheckbox(text, id) {
   inputElm.type = "checkbox"
   divElm.className = "checkbox";
 
-  inputElm.setAttribute("zone", id);
+    inputElm.setAttribute("zone", id);
 
   inputElm.onclick = function (e) {
     var currentZone = this.getAttribute("zone");
@@ -180,11 +180,11 @@ function createActionCheckbox(text, id) {
     map.setLayoutProperty(currentZone, 'visibility', newProp);
   };
 
-  labelElm.appendChild(inputElm);
-  labelElm.appendChild(document.createTextNode(text));
-  divElm.appendChild(labelElm);
+    labelElm.appendChild(inputElm);
+    labelElm.appendChild(document.createTextNode(text));
+    divElm.appendChild(labelElm);
 
-  document.getElementById("actions").appendChild(divElm);
+    document.getElementById("actions").appendChild(divElm);
 }
 
 function refresh() {
