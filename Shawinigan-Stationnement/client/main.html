@@ -5,7 +5,8 @@
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="./public/assets/css/min/main.css">
-    <style>
+    <style  type="text/css">
+    <%@ include file="./public/assets/css/min/main.css" %>
         body { margin:0; padding:0; overflow: hidden; }
         #map { position: absolute;top:0; bottom:0; height:100%; width:75%; }
         .flex-group {
@@ -22,20 +23,53 @@
           order: 2;
           width: 75%;
         }
-        div.btnRefresh input
+        .button
         {
-            background: url("../../assets\img\refresh.png") no-repeat;
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
             width: 200px;
-            height: 100px;
-
+            transition: all 0.5s;   
+            cursor: pointer;
+            margin: 5px;
+            
         }
-
+        .button span
+        {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+        .button span:after
+        {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover span
+        {
+            padding-right: 25px;
+        }
+        .button:hover span:after
+        {
+            opacity: 1;
+            right: 0;
+        }
     </style>
 </head>
 <body>
     <div class="flex-group">
         <div class="flex-item-1">
-        <div class="btnRefresh"><input type="button" onclick="funcRefresh" value=""/></div>
+        <button class="button" style="vertical-align: middle" onclick="funcRefresh"><span>Hover </span></button>
         </div>
         <div class="flex-item-2">
             {{> map}}
