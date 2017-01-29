@@ -7,18 +7,15 @@
 </head>
 
 <body>
-    <div class="flex-group">
-        <div class="flex-group2">
-          <nav id="menu"><a href="#">X</a></nav>
-            <div id="actions"></div>
-            <button class="button" style="vertical-align: middle" onclick="funcRefresh"><span><strong>Rafraichir</strong> </span></button>
-        </div>
-
-        <div class="flex-item-2">
-            {{> map}}
-        </div>
-
-    </div>
+  <div class="nav-container">
+    <nav id="menu"><a href="#">X</a></nav>
+    <img src="http://i.imgur.com/ifn4nYI.png" class="logo nav-container-align-center" />
+    <div id="actions"></div>
+    <button class="button nav-container-align-center" onclick="funcRefresh"><span><strong>Rafraichir</strong> </span></button>
+  </div>
+  <div class="map-container">
+    {{> map}}
+  </div>
 </body>
 
 <template name="map">

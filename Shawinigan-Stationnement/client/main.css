@@ -3,6 +3,16 @@
   height: 400px;
 }
 
+.logo {
+  position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+}
+.nav-container-align-center {
+  left: 50px;
+  position: relative;
+}
 #geoloc {
   position: absolute;
   bottom: 100px;
@@ -18,12 +28,25 @@ body {
     overflow: hidden;
 }
 
+
 #map {
     position: absolute;
     top: 0;
     bottom: 0;
     height: 100%;
-    width: 80%;
+    width: 100%;
+}
+
+.map-container {
+  width: 100%;
+}
+.nav-container {
+  padding-top: 50px;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  background-image: url("http://www.scoopthemes.com/templates/Oleose/Eco/assets/img/eco/bk-eco-ga.jpg");
 }
 
 .flex-group {
@@ -34,24 +57,25 @@ body {
 }
 
   .flex-group2 {
+    padding-top: 50px;
     height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      width: 20%;
-      justify-content: space-around;
-      background-image: url("http://www.scoopthemes.com/templates/Oleose/Eco/assets/img/eco/bk-eco-ga.jpg");
-      order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 20%;
+    justify-content: space-around;
+    background-image: url("http://www.scoopthemes.com/templates/Oleose/Eco/assets/img/eco/bk-eco-ga.jpg");
+    order: 1;
   }
 
   .flex-item-2 {
     height: 100%;
       order: 2;
-      width: 80%;
+      width: 100%;
   }
 
-  .hide-menu > .flex-group2 {
-    width: 50px;
+  .hide-menu {
+    transform: translateX(-200px);
   }
 
   .hide-menu > .flex-item-2 {
@@ -102,10 +126,10 @@ body {
 
   #menu {
       background: #fff;
-      position: relative;
+      position: absolute;;
       z-index: 1;
       top: 3px;
-      right: -417px;
+      left: 210px;
       border-radius: 3px;
       width: 38px;
       border: 1px solid rgba(0,0,0,0.4);
@@ -142,7 +166,7 @@ body {
   }
 
   .hide-menu #menu {
-    left: 2px;
+    left: 210px;
   }
 .mapbox-control-container {
   text-align: center;

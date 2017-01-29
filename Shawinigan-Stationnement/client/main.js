@@ -36,10 +36,8 @@ function menuclose() {
   $("#menu").on("click",function(e) {
   e.preventDefault();
   e.stopPropagation();
-  console.log("aaa")
   var smallClass = "hide-menu";
-  var fgroup = $(".flex-group");
-  console.log(fgroup)
+  var fgroup = $(".nav-container");
   if(fgroup.hasClass(smallClass)) {
     fgroup.removeClass(smallClass);
     $("#menu a").text("X")
