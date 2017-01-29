@@ -4,85 +4,12 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
-
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            height: 100%;
-            width: 75%;
-        }
-
-        .flex-group {
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-        }
-
-        .flex-group2 {
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            width: 20%;
-            justify-content: space-around;
-            background-image: url("\pblic/bk-eco.JPG");
-            order: 1;
-        }
-
-        .flex-item-2 {
-            order: 2;
-            width: 80%;
-        }
-
-        .button {
-            background-color: #4CAF50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            -webkit-transition-duration: 0.4s;
-            /* Safari */
-            transition-duration: 0.4s;
-            cursor: pointer;
-            opacity: 0.7;
-        }
-
-        .button {
-            background-color: white;
-            color: black;
-            border: 2px solid #4CAF50;
-        }
-
-        .grZone {
-            padding: 20px;
-        }
-
-        .checkbox {
-            font-size: large;
-        }
-
-        .button:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
     <div class="flex-group">
         <div class="flex-group2">
+          <nav id="menu"><a href="#">X</a></nav>
             <div id="actions"></div>
             <button class="button" style="vertical-align: middle" onclick="funcRefresh"><span><strong>Rafraichir</strong> </span></button>
         </div>
