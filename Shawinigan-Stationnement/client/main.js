@@ -138,9 +138,11 @@ Meteor.startup(function() {
         map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
         if (!features.length) {
-
-            setColor(activeFeature, oldColor);
-            activeFeature = null;
+            if(activeFeature != undefined){
+                setColor(activeFeature, oldColor);
+            }
+                
+            activeFeature = undefined;
             popup.remove();
             return;
 
@@ -148,32 +150,34 @@ Meteor.startup(function() {
 
         var feature = features[0];
 
-        if(feature != activeFeature){
-            oldColor = setColor(feature, "lightgray");
+        if(activeFeature == undefined || feature.layer.id != activeFeature.layer.id){
+            if(activeFeature != undefined)
+                setColor(activeFeature, oldColor);
+            oldColor = setColor(feature, "darkgrey");
             activeFeature = feature;
         }
 
-        function setColor(feature, color){
-            var oldColor;
-            switch(feature){
+        function setColor(featureToChange, color){
+
+            var oldColorReturn;
+            console.log(featureToChange);
+            switch(featureToChange.layer.id){
                 case "rueA":
                 case "rueB":
-                    oldColor = feature["paint"]["line-color"];
-                    feature["paint"]["line-color"] = color;
+                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "line-color");
+                    map.setPaintProperty(featureToChange.layer.id, "line-color", color)
                     break;
                 case "elec":
                 case "position":
-                    console.log(feature);
-                    oldColor = feature["paint"]["circle-color"];
-                    feature["paint"]["circle-color"] = "lightgray";
-                    console.log(feature);
+                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
+                    map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
                     break;
                 case "muni":
-                    oldColor = feature["paint"]["fill-color"];
-                    feature["paint"]["fill-color"] = color;
+                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
+                    map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
                     break;
             }
-            return oldColor;
+            return oldColorReturn;
         }
 
         popup.setLngLat(feature.geometry.coordinates)
