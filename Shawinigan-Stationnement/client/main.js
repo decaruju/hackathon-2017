@@ -131,18 +131,24 @@ Meteor.startup(function() {
         });
     });
 
+    var oldColor;
+    var activeFeature;
     map.on('mousemove', function(e) {
-        var features = map.queryRenderedFeatures(e.point, { layers: ['elec'] });
+        var features = map.queryRenderedFeatures(e.point, { layers: ['muni', 'elec', 'position', 'rueA', 'rueB'] });
 
         map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
         if (!features.length) {
+
+            //activeFeature.paint.fillColor.fill-color = oldColor;
+            activeFeature = null;
             popup.remove();
             return;
+
         }
 
         var feature = features[0];
-
+        
         popup.setLngLat(feature.geometry.coordinates)
             .setHTML(feature.properties.description +"<br>" +feature.properties.cost + "<br>" + feature.properties.building)
             .addTo(map);
