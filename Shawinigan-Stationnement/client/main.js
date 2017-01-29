@@ -17,10 +17,11 @@ var popup = new mapboxgl.Popup({
 
 function getPosition() {
     coord = Geolocation.latLng();
+    console.log(coord);
     if (coord != null)
         return {
-            "properties": {
-                "description": "Vous etes ici."
+            "properties":{
+              "description": "Vous etes ici."
             },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
@@ -125,9 +126,9 @@ Meteor.startup(function() {
             "id": "eleccirc",
             "source": "elec",
             "type": "circle",
-            "layout": {
+            "paint": {
                 "circle-color": "green",
-                "circle-radius": 10
+                "circle-radius": 15
             }
         });
         map.addLayer({
@@ -149,15 +150,47 @@ Meteor.startup(function() {
         map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
         if (!features.length) {
-
-            //activeFeature.paint.fillColor.fill-color = oldColor;
-            activeFeature = null;
+            if(activeFeature != undefined){
+                setColor(activeFeature, oldColor);
+            }
+                
+            activeFeature = undefined;
             popup.remove();
             return;
 
         }
 
         var feature = features[0];
+
+        if(activeFeature == undefined || feature.layer.id != activeFeature.layer.id){
+            if(activeFeature != undefined)
+                setColor(activeFeature, oldColor);
+            oldColor = setColor(feature, "darkgrey");
+            activeFeature = feature;
+        }
+
+        function setColor(featureToChange, color){
+
+            var oldColorReturn;
+            console.log(featureToChange);
+            switch(featureToChange.layer.id){
+                case "rueA":
+                case "rueB":
+                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "line-color");
+                    map.setPaintProperty(featureToChange.layer.id, "line-color", color)
+                    break;
+                case "elec":
+                case "position":
+                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
+                    map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
+                    break;
+                case "muni":
+                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
+                    map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
+                    break;
+            }
+            return oldColorReturn;
+        }
 
         if (feature.stattype === "electric") {
             popup.setLngLat(feature.geometry.coordinates)
@@ -169,7 +202,7 @@ Meteor.startup(function() {
     createActionCheckbox("Cacher zone A", "rueA");
     createActionCheckbox("Cacher zone B", "rueB");
 
-    setInterval(function() { map.getSource('point').setData(getPosition()); }, 1000);
+  setInterval(function(){map.getSource('point').setData(getPosition());}, 1000);
 });
 
 function createActionCheckbox(text, id) {
@@ -181,7 +214,7 @@ function createActionCheckbox(text, id) {
     inputElm.type = "checkbox"
     divElm.className = "checkbox";
 
-    inputElm.setAttribute("zone", id);
+  inputElm.setAttribute("zone", id);
 
 
     inputElm.onclick = function(e) {
@@ -191,11 +224,11 @@ function createActionCheckbox(text, id) {
         map.setLayoutProperty(currentZone, 'visibility', newProp);
     };
 
-    labelElm.appendChild(inputElm);
-    labelElm.appendChild(document.createTextNode(text));
-    divElm.appendChild(labelElm);
+  labelElm.appendChild(inputElm);
+  labelElm.appendChild(document.createTextNode(text));
+  divElm.appendChild(labelElm);
 
-    document.getElementById("actions").appendChild(divElm);
+  document.getElementById("actions").appendChild(divElm);
 }
 
 function refresh() {
