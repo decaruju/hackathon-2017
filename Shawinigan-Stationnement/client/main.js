@@ -17,6 +17,7 @@ var popup = new mapboxgl.Popup({
 
 function getPosition() {
     coord = Geolocation.latLng();
+    console.log(coord);
     if (coord != null)
         return {
             "properties": {
@@ -127,10 +128,8 @@ Meteor.startup(function() {
             "type": "symbol",
             "layout": {
               "icon-image": "car-15",
-            },
-            "icon-color": "green",
-            "icon-halo-color": "green",
-            "icon-halo-width": 10
+              //"color": "green"
+            }
         });
     });
 
@@ -159,12 +158,13 @@ Meteor.startup(function() {
 
   createActionCheckbox("Cacher zone A", "rueA");
   createActionCheckbox("Cacher zone B", "rueB");
-  createActionCheckbox("Cacher muni", "muni");
 
     setInterval(function() { map.getSource('point').setData(getPosition()); }, 1000);
 });
 
 function createActionCheckbox(text, id) {
+  console.log(text);
+  console.log("ici");
   var divElm = document.createElement("div");
   var labelElm = document.createElement("label");
   var inputElm = document.createElement("input");
@@ -172,6 +172,7 @@ function createActionCheckbox(text, id) {
   divElm.className = "checkbox";
 
     inputElm.setAttribute("zone", id);
+
 
   inputElm.onclick = function (e) {
     var currentZone = this.getAttribute("zone");
