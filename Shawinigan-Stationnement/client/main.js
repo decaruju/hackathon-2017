@@ -47,6 +47,8 @@ Meteor.startup(function() {
         zoom: 14 // starting zoom
     });
 
+    window.map = map;
+
     map.addControl(new mapboxgl.GeolocateControl());
     var nav = new mapboxgl.NavigationControl();
     map.addControl(nav, 'top-left');
@@ -120,12 +122,21 @@ Meteor.startup(function() {
             "data": data.elec
         });
         map.addLayer({
-            "id": "elec",
+            "id": "eleccirc",
             "source": "elec",
             "type": "circle",
             "paint": {
-                "circle-radius": 10,
-                "circle-color": "green"
+                "circle-color": "green",
+                "circle-radius": 15
+            }
+        });
+        map.addLayer({
+            "id": "elec",
+            "source": "elec",
+            "type": "symbol",
+            "layout": {
+                "icon-image": "car-15",
+                //"color": "green"
             }
         });
     });
@@ -183,28 +194,39 @@ Meteor.startup(function() {
         popup.setLngLat(feature.geometry.coordinates)
             .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
             .addTo(map);
-
     });
 
-    Template.body.events({
-        'click #zoneA': function(e) {
-            console.log('asofuij');
-            buttons[0] = !buttons[0];
-            map.setLayoutProperty("rueA", 'visibility', buttons[0] ? 'none' : 'visible');
-        },
-        'change #zoneB': function() {
-            zones.zoneB = !zones.zoneB;
-            console.log(zones.zoneB);
-        },
-        'change #zoneC': function() {
-            zones.zoneC = !zones.zoneC;
-            console.log(zones.zoneC);
-        }
-    })
-
+    createActionCheckbox("Cacher zone A", "rueA");
+    createActionCheckbox("Cacher zone B", "rueB");
 
     setInterval(function() { map.getSource('point').setData(getPosition()); }, 1000);
-})
+});
+
+function createActionCheckbox(text, id) {
+    console.log(text);
+    console.log("ici");
+    var divElm = document.createElement("div");
+    var labelElm = document.createElement("label");
+    var inputElm = document.createElement("input");
+    inputElm.type = "checkbox"
+    divElm.className = "checkbox";
+
+    inputElm.setAttribute("zone", id);
+
+
+    inputElm.onclick = function(e) {
+        var currentZone = this.getAttribute("zone");
+        var current = map.getLayoutProperty(currentZone, "visibility") || "visible";
+        var newProp = (current === "visible") ? "none" : "visible";
+        map.setLayoutProperty(currentZone, 'visibility', newProp);
+    };
+
+    labelElm.appendChild(inputElm);
+    labelElm.appendChild(document.createTextNode(text));
+    divElm.appendChild(labelElm);
+
+    document.getElementById("actions").appendChild(divElm);
+}
 
 function refresh() {
 
