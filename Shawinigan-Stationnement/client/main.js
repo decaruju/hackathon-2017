@@ -124,7 +124,7 @@ Meteor.startup(function() {
             "source": "elec",
             "type": "symbol",
             "layout": {
-              "icon-image": "{marker-symbol}-15",
+              "icon-image": "car-15",
               //"color": "green"
             }
         });
