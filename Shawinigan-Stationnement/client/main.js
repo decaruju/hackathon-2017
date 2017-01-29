@@ -12,6 +12,7 @@ var zones = f.getAreaStatus();
 
 function getPosition() {
   coord = Geolocation.latLng();
+  console.log(coord);
   if (coord != null)
   return {
     "type": "Point",
