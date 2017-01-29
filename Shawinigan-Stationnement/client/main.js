@@ -197,7 +197,7 @@ Meteor.startup(function() {
                 .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
                 .addTo(map);
         } else {
-            popup.setLngLat(feature.geometry.coordinates)
+            popup.setLngLat([0, 0])
                 .setHTML("feature.stattype")
                 .addTo(map);
         }
