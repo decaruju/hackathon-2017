@@ -2,7 +2,9 @@
   width: 400px;
   height: 400px;
 }
-
+.mapboxgl-control-container {
+  z-index: 5;
+}
 .logo {
   position: relative;
     margin: 0 auto;
