@@ -139,69 +139,70 @@ Meteor.startup(function() {
                 //"color": "green"
             }
         });
-    });
 
-    var oldColor;
-    var activeFeature;
-    map.on('mousemove', function(e) {
-        var features = map.queryRenderedFeatures(e.point, { layers: ['muni', 'elec', 'position', 'rueA', 'rueB'] });
+        var oldColor;
+        var activeFeature;
+        map.on('mousemove', function(e) {
+          var features = map.queryRenderedFeatures(e.point, { layers: ['muni', 'elec', 'position', 'rueA', 'rueB'] });
 
-        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+          map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
-        if (!features.length) {
+          if (!features.length) {
             if (activeFeature != undefined) {
-                setColor(activeFeature, oldColor);
+              setColor(activeFeature, oldColor);
             }
 
             activeFeature = undefined;
             popup.remove();
             return;
 
-        }
+          }
 
-        var feature = features[0];
+          var feature = features[0];
 
-        if (activeFeature == undefined || feature.layer.id != activeFeature.layer.id) {
+          if (activeFeature == undefined || feature.layer.id != activeFeature.layer.id) {
             if (activeFeature != undefined)
-                setColor(activeFeature, oldColor);
+            setColor(activeFeature, oldColor);
             oldColor = setColor(feature, "darkgrey");
             activeFeature = feature;
-        }
+          }
 
-        function setColor(featureToChange, color) {
+          function setColor(featureToChange, color) {
 
             var oldColorReturn;
 
             switch (featureToChange.layer.id) {
-                case "rueA":
-                case "rueB":
-                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "line-color");
-                    map.setPaintProperty(featureToChange.layer.id, "line-color", color)
-                    break;
-                    /*case "elec":
-                    case "position":
-                        oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
-                        map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
-                        break;*/
-                case "muni":
-                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
-                    map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
-                    break;
+              case "rueA":
+              case "rueB":
+              oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "line-color");
+              map.setPaintProperty(featureToChange.layer.id, "line-color", color)
+              break;
+              /*case "elec":
+              case "position":
+              oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
+              map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
+              break;*/
+              case "muni":
+              oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
+              map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
+              break;
             }
 
             return oldColorReturn;
-        }
+          }
 
-        if (feature.stattype === "electric") {
+          if (feature.stattype === "electric") {
             popup.setLngLat(feature.geometry.coordinates)
-                .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
-                .addTo(map);
-        } else {
+            .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+            .addTo(map);
+          } else {
             popup.setLngLat([0, 0]) // ICI
-                .setHTML("feature.stattype")
-                .addTo(map);
-        }
+            .setHTML("feature.stattype")
+            .addTo(map);
+          }
+        });
     });
+
 
     createActionCheckbox("Cacher zone A", "rueA");
     createActionCheckbox("Cacher zone B", "rueB");
