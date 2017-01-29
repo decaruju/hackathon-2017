@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "cost": "1.00",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.74810671806335,
+          46.539355052463634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "cost": "1.00",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.74974822998047,
+          46.55576177193231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "cost": "1.00",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.74797797203064,
+          46.55957957969507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "cost": "1.00$ par heure",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.73899793624878,
+          46.561973411014044
+        ]
+      }
+    }
+  ]
+}
