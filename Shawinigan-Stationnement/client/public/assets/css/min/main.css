@@ -384,6 +384,10 @@ h6,
 .h6 {
   color: #666666;
 }
+.logo {
+  width: 100px;
+  height: auto;
+}
 header #nav.affix {
   position: fixed;
   top: 0;

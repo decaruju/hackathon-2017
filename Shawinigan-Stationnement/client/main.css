@@ -12,7 +12,7 @@
     height: 150px;
 }
 .nav-container-align-center {
-  left: 50px;
+  left: 35px;
   position: relative;
 }
 #geoloc {
@@ -43,7 +43,8 @@ body {
   width: 100%;
 }
 .nav-container {
-  padding-top: 50px;
+  padding: 50px 10px 10px 10px;
+  max-width: 250px;
   position: absolute;
   z-index: 3;
   top: 0;
@@ -131,7 +132,7 @@ body {
       position: absolute;;
       z-index: 1;
       top: 3px;
-      left: 210px;
+      left: 205px;
       border-radius: 3px;
       width: 38px;
       border: 1px solid rgba(0,0,0,0.4);
@@ -168,7 +169,7 @@ body {
   }
 
   .hide-menu #menu {
-    left: 210px;
+    left: 205px;
   }
 
 .mapbox-control-container {
