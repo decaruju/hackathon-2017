@@ -29,11 +29,21 @@
         <div class="flex-item-1">
             <input type="button" onclick="funcRefresh" value="Rafraichir" class="btn btn-default"/>
 
-            <div class="checkbox">
+            <div id="zoneA" class="checkbox" checked={{callbackZoneA}}>
              <label>
-               <input type="checkbox"> Check me out
+               <input type="checkbox"> Zone A
              </label>
            </div>
+           <div id="zoneB" class="checkbox" checked={{callbackZoneB}}>
+            <label>
+              <input type="checkbox"> Zone B
+            </label>
+          </div>
+          <div id="zoneC" class="checkbox" checked={{callbackZoneC}}>
+           <label>
+             <input type="checkbox"> Zone C
+           </label>
+         </div>
         </div>
         <div class="flex-item-2">
             {{> map}}

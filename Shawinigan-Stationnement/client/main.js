@@ -5,9 +5,10 @@ const MY_ACCESS_TOKEN = 'pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4
 const MY_MAP_ID = 'mapbox.satellite';
 var coord
 
-
+var buttons = [false, false, false]
 
 var radius = 20;
+var zones = f.getAreaStatus();
 
 function getPosition() {
   coord = Geolocation.latLng();
@@ -37,7 +38,6 @@ Meteor.startup(function () {
     //maxBounds: bounds,
     zoom: 14 // starting zoom
   });
-  var zones = f.getAreaStatus();
 
   map.addControl(new mapboxgl.GeolocateControl());
   var nav = new mapboxgl.NavigationControl();
@@ -66,6 +66,7 @@ Meteor.startup(function () {
     });
     map.addLayer({
       "id": "rueA",
+      visibility: false,
       "source": "ruesA",
       "type": "line",
       "paint": {
@@ -81,6 +82,7 @@ Meteor.startup(function () {
       }
     });
     map.addLayer({
+      visibility: false,
       "id": "rueB",
       "source": "ruesB",
       "type": "line",
@@ -89,6 +91,7 @@ Meteor.startup(function () {
         "line-width": 3
       }
     });
+
 
     map.addSource('muni', {
       "type": "geojson",
@@ -104,6 +107,26 @@ Meteor.startup(function () {
       }
     });
   });
+
+  Template.body.events({
+    'click #zoneA' : function (e)
+    {
+      console.log('asofuij');
+      buttons[0] = !buttons[0];
+      map.setLayoutProperty("rueA", 'visibility', buttons[0] ? 'none' : 'visible');
+    },
+    'change #zoneB' : function ()
+    {
+      zones.zoneB =! zones.zoneB;
+      console.log(zones.zoneB);
+    },
+    'change #zoneC' : function ()
+    {
+      zones.zoneC =! zones.zoneC;
+      console.log(zones.zoneC);
+    }
+  })
+
 
   setInterval(function(){map.getSource('point').setData(getPosition());}, 1000);
 })

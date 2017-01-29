@@ -6,8 +6,8 @@ export function getAreaStatus(failedRatio = 0.5){
         return Math.random() >= failedRatio;
     }
 
-    Zone.zoneA = getRandomBool();
     Zone.zoneB = getRandomBool();
+    Zone.zoneA = getRandomBool();
     Zone.zoneC = getRandomBool();
 
     return Zone;
