@@ -6,13 +6,14 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="./public/assets/css/min/main.css">
     <style  type="text/css">
-        body { 
+        body {
             margin:0;
             padding:0;
             overflow: hidden;
-            
+
             }
         #map { position: absolute;top:0; bottom:0; height:100%; width:75%; }
+
         .flex-group {
           display: flex;
           flex-direction: row;
@@ -32,7 +33,7 @@
           background-color: #4CAF50; /* Green */
           border: none;
           color: white;
-          padding: 16px 32px; 
+          padding: 16px 32px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
@@ -44,8 +45,8 @@
           opacity: 0.7;
         }
         .button {
-             background-color: white; 
-            color: black; 
+             background-color: white;
+            color: black;
             border: 2px solid #4CAF50;
         }
 
@@ -59,28 +60,17 @@
 <body>
     <div class="flex-group">
         <div class="flex-item-1">
-        <button class="button" style="vertical-align: middle" onclick="funcRefresh"><span><strong>Rafraichir</strong> </span></button>
+          <button class="button" style="vertical-align: middle" onclick="funcRefresh">
+            <span><strong>Rafraichir</strong></span>
+          </button>
 
+          <div id="actions">
             <input type="button" onclick="funcRefresh" value="Rafraichir" class="btn btn-default"/>
-
-            <div id="zoneA" class="checkbox" checked={{callbackZoneA}}>
-             <label>
-               <input type="checkbox"> Zone A
-             </label>
-           </div>
-           <div id="zoneB" class="checkbox" checked={{callbackZoneB}}>
-            <label>
-              <input type="checkbox"> Zone B
-            </label>
           </div>
-          <div id="zoneC" class="checkbox" checked={{callbackZoneC}}>
-           <label>
-             <input type="checkbox"> Zone C
-           </label>
-         </div>
         </div>
+
         <div class="flex-item-2">
-            {{> map}}
+          {{> map}}
         </div>
     </div>
 </body>
