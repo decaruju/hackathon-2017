@@ -121,15 +121,15 @@ Meteor.startup(function() {
             "type": "geojson",
             "data": data.elec
         });
-        map.addLayer({
-            "id": "eleccirc",
-            "source": "elec",
-            "type": "circle",
-            "paint": {
-                "circle-color": "green",
-                "circle-radius": 15
-            }
-        });
+        //map.addLayer({
+        //    "id": "eleccirc",
+        //    "source": "elec",
+        //    "type": "circle",
+        //    "paint": {
+        //        "circle-color": "green",
+        //        "circle-radius": 15
+        //    }
+        //});
         map.addLayer({
             "id": "elec",
             "source": "elec",
