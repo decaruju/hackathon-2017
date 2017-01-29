@@ -17,7 +17,6 @@ var popup = new mapboxgl.Popup({
 
 function getPosition() {
     coord = Geolocation.latLng();
-    console.log(coord);
     if (coord != null)
         return {
             "properties": {
@@ -172,7 +171,6 @@ Meteor.startup(function() {
         function setColor(featureToChange, color) {
 
             var oldColorReturn;
-            console.log(featureToChange);
             switch (featureToChange.layer.id) {
                 case "rueA":
                 case "rueB":
@@ -210,8 +208,6 @@ Meteor.startup(function() {
 });
 
 function createActionCheckbox(text, id) {
-    console.log(text);
-    console.log("ici");
     var divElm = document.createElement("div");
     var labelElm = document.createElement("label");
     var inputElm = document.createElement("input");
