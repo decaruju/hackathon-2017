@@ -1,4 +1,4 @@
-function getAreaStatus(failedRatio = 0.33){
+export function getAreaStatus(failedRatio = 0.5){
 
     var Zone = {};
 

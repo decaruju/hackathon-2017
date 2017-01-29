@@ -1,10 +1,11 @@
 import data from './dataset.js'
+import f from './zoneStatus.js'
 
 const MY_ACCESS_TOKEN = 'pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4MWN0dSJ9.tVz5AQpyWKIxqX_x-FHRpg';
 const MY_MAP_ID = 'mapbox.satellite';
 var coord
 
-// console.log(_.where(rows, { type: "a" }));
+
 
 var radius = 20;
 
@@ -36,6 +37,8 @@ Meteor.startup(function () {
     //maxBounds: bounds,
     zoom: 14 // starting zoom
   });
+  var zones = f.getAreaStatus();
+
   map.addControl(new mapboxgl.GeolocateControl());
   var nav = new mapboxgl.NavigationControl();
   map.addControl(nav, 'top-left');
@@ -54,22 +57,50 @@ Meteor.startup(function () {
         "circle-color": "blue"
       }
     });
-
     map.addSource('ruesA', {
       "type": "geojson",
-      "data": data.cheval
+      "data": {
+        "type": "FeatureCollection",
+        "features": _.where(data.rues.features, { "properties": "A" })
+      }
+    });
+    map.addLayer({
+      "id": "rueA",
+      "source": "ruesA",
+      "type": "line",
+      "paint": {
+        "line-color": zones.zoneA ? "green" : "red",
+        "line-width": 3
+      }
     });
     map.addSource('ruesB', {
       "type": "geojson",
-      "data": data.cheval
+      "data": {
+        "type": "FeatureCollection",
+        "features": _.where(data.rues.features, { "properties": "B" })
+      }
     });
     map.addLayer({
-      "id": "rue",
-      "source": "rues",
+      "id": "rueB",
+      "source": "ruesB",
       "type": "line",
       "paint": {
-        "line-color": "red",
+        "line-color": zones.zoneB ? "green" : "red",
         "line-width": 3
+      }
+    });
+
+    map.addSource('muni', {
+      "type": "geojson",
+      "data": data.muni
+    });
+    map.addLayer({
+      "id": "muni",
+      "source": "muni",
+      "type": "fill",
+      "paint": {
+        "fill-color": "purple",
+        "fill-opacity": 1
       }
     });
   });
