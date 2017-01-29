@@ -81,7 +81,7 @@ Meteor.startup(function() {
             "type": "line",
             "paint": {
                 "line-color": zones.zoneA ? "green" : "red",
-                "line-width": 3
+                "line-width": 5
             }
         });
         map.addSource('ruesB', {
@@ -98,7 +98,7 @@ Meteor.startup(function() {
             "type": "line",
             "paint": {
                 "line-color": zones.zoneB ? "green" : "red",
-                "line-width": 3
+                "line-width": 5
             }
         });
 
