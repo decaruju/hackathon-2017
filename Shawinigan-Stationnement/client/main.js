@@ -78,19 +78,6 @@ Meteor.startup(function() {
     map.addControl(nav, 'top-left');
     map.on('load', function() {
 
-        map.addSource('point', {
-            "type": "geojson",
-            "data": getPosition()
-        });
-        map.addLayer({
-            "id": "position",
-            "source": "point",
-            "type": "symbol",
-            "layout": {
-              "icon-image": "star-15",
-              "icon-size": 1.5
-            }
-        });
         map.addSource('ruesA', {
             "type": "geojson",
             "data": {
@@ -161,6 +148,20 @@ Meteor.startup(function() {
             "layout": {
                 "icon-image": "car-15",
                 //"color": "green"
+            }
+        });
+
+        map.addSource('point', {
+            "type": "geojson",
+            "data": getPosition()
+        });
+        map.addLayer({
+            "id": "position",
+            "source": "point",
+            "type": "symbol",
+            "layout": {
+              "icon-image": "star-15",
+              "icon-size": 1.5
             }
         });
 
