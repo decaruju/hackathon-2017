@@ -53,12 +53,6 @@
             color: black;
             border: 2px solid #4CAF50;
         }
-        .button:hover {
-            background-color: #4CAF50;
-            color: white;
-        }
-        
-
         .grZone
         {
             
@@ -68,40 +62,36 @@
         {
             font-size: large;
         }
-        .button2 {
-          background-color: #008cba; /* Blue */
-          border: none;
-          color: white;
-          padding: 16px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          -webkit-transition-duration: 0.4s; /* Safari */
-          transition-duration: 0.4s;
-          cursor: pointer;
-          opacity: 0.7;
-        }
-        .button2 {
-             background-color: white;
-            color: black;
-            border: 2px solid #008cba;
-        }
-        .button2:hover {
-            background-color: #008cba;
-            color: white;
-        }
 
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
     </style>
 </head>
 <body>
-    <div id="actions"></div>
+
     <div class="flex-group">
         <div class="flex-group2">
         <button class="button" style="vertical-align: middle" onclick="funcRefresh"><span><strong>Rafraichir</strong> </span></button>
-            
+            <div class="grZone">
+            <div id="zoneA" class="checkbox" checked={{callbackZoneA}}>
+             <label>
+               <input type="checkbox"> Zone A
+             </label>
+           </div>
+           <div id="zoneB" class="checkbox" checked={{callbackZoneB}}>
+            <label>
+              <input type="checkbox"> Zone B
+            </label>
+          </div>
+          <div id="zoneC" class="checkbox" checked={{callbackZoneC}}>
+           <label>
+             <input type="checkbox"> Zone C
+           </label>
+         </div>
+            </div>
         </div>
 
         <div class="flex-item-2">

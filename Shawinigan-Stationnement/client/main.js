@@ -158,7 +158,6 @@ Meteor.startup(function() {
 
   createActionCheckbox("Cacher zone A", "rueA");
   createActionCheckbox("Cacher zone B", "rueB");
-  createActionCheckbox("Cacher voitures électriques", "elec");
 
   setInterval(function(){map.getSource('point').setData(getPosition());}, 1000);
 });
