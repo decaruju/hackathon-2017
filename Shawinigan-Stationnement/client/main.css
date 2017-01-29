@@ -32,7 +32,8 @@ body {
 
 .charte {
   background-color: rgba(102,204,153, 0.7);
-  border: 1px solid #fff;
+  color: #fff;
+  /*border: 1px solid #fff;*/
   border-radius: 5px;
   padding: 5px 5px;
 }
