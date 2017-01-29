@@ -20,6 +20,9 @@ function getPosition() {
     console.log(coord);
     if (coord != null)
         return {
+            "properties":{
+              "description": "Vous etes ici."
+            }
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
         };
@@ -140,8 +143,6 @@ Meteor.startup(function() {
 
         var feature = features[0];
 
-        // Populate the popup and set its coordinates
-        // based on the feature found.
         popup.setLngLat(feature.geometry.coordinates)
             .setHTML(feature.properties.description)
             .addTo(map);
