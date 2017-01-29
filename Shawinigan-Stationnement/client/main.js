@@ -48,45 +48,10 @@ Meteor.startup(function () {
       "type": "circle",
       "paint": {
         "circle-radius":10,
-        "circle-color": "white"
+        "circle-color": "blue"
       }
     });
   });
 
   setInterval(function(){map.getSource('point').setData(pointOnCircle());}, 1000);
 })
-
-Template.map.rendered = function () {
-
-
-}
-
-Template.map.asdoij = function (){
-  map.addSource('point', {
-    "type": "geojson",
-    "data": pointOnCircle(0)
-  });
-
-  map.addLayer({
-    "id": "point",
-    "source": "point",
-    "type": "circle",
-    "paint": {
-      "circle-radius": 10,
-      "circle-color": "#007cbf"
-    }
-  });
-
-  function animateMarker(timestamp) {
-    // Update the data to a new position based on the animation timestamp. The
-    // divisor in the expression `timestamp / 1000` controls the animation speed.
-    map.getSource('point').setData(pointOnCircle(timestamp / 1000));
-
-    // Request the next frame of the animation.
-    requestAnimationFrame(animateMarker);
-  }
-
-  // Start the animation.
-  animateMarker(0);
-  //
-}
