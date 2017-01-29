@@ -11,8 +11,8 @@ var radius = 20;
 var zones = f.getAreaStatus();
 
 var popup = new mapboxgl.Popup({
-    closeButton: false,
-    closeOnClick: false
+    closeButton: true,
+    closeOnClick: true
 });
 
 function getPosition() {
@@ -228,6 +228,11 @@ Meteor.startup(function() {
                     pos = Math.floor(feature.geometry.coordinates.length / 2);
                     popup.setLngLat(feature.geometry.coordinates[pos])
                         .setHTML("<h2>Zone B<br>Statut : " + (zones.zoneB ? "Permis" : "Interdit")+"</h2>")
+                        .addTo(map);
+                    break;
+                case "point":
+                    popup.setLngLat(feature.geometry.coordinates)
+                        .setHTML("<h2>Vous êtes ici</h2>")
                         .addTo(map);
                     break;
                 case "muni":
