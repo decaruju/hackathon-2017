@@ -6,37 +6,44 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
 
     <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
+      html, body{
+        height:100%;
+      }
 
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            height: 100%;
-            width: 75%;
-        }
+      body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
 
-        .flex-group {
-            display: flex;
-            flex-direction: row;
-            align-items: stretch;
-        }
+      #map {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          height: 100%;
+          width: 80%;
+      }
+
+      .flex-group {
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+      }
 
         .flex-group2 {
+          height: 100%;
             display: flex;
             flex-direction: column;
             align-items: stretch;
             width: 20%;
             justify-content: space-around;
-            background-image: url("\pblic/bk-eco.JPG");
+            background-image: url("http://www.scoopthemes.com/templates/Oleose/Eco/assets/img/eco/bk-eco-ga.jpg");
             order: 1;
         }
 
         .flex-item-2 {
+          height: 100%;
             order: 2;
             width: 80%;
         }
