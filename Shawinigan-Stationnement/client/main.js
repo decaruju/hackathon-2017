@@ -159,9 +159,11 @@ Meteor.startup(function() {
 
         var feature = features[0];
 
-        popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
-            .addTo(map);
+        if (feature.stattype === "electric") {
+            popup.setLngLat(feature.geometry.coordinates)
+                .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+                .addTo(map);
+        }
     });
 
     createActionCheckbox("Cacher zone A", "rueA");

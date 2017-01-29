@@ -3,6 +3,7 @@ export const rues = {
     "features": [{
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -48,6 +49,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -90,6 +92,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -105,6 +108,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -120,6 +124,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -135,6 +140,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -150,6 +156,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -165,6 +172,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -180,6 +188,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -195,6 +204,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -210,6 +220,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -225,6 +236,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -246,6 +258,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -261,6 +274,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -276,6 +290,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -297,6 +312,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -315,6 +331,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -348,6 +365,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -372,6 +390,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -411,6 +430,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -435,6 +455,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -450,6 +471,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -465,6 +487,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -489,6 +512,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -519,6 +543,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -534,6 +559,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -561,6 +587,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -576,6 +603,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -603,6 +631,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -618,6 +647,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -636,6 +666,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -663,6 +694,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -678,6 +710,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -702,6 +735,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -717,6 +751,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -732,6 +767,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -750,6 +786,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -765,6 +802,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -780,6 +818,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -795,6 +834,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -816,6 +856,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -831,6 +872,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -846,6 +888,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -861,6 +904,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -876,6 +920,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -891,6 +936,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -906,6 +952,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -921,6 +968,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -936,6 +984,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -951,6 +1000,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -966,6 +1016,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -981,6 +1032,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -996,6 +1048,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1011,6 +1064,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1026,6 +1080,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1041,6 +1096,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1056,6 +1112,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1071,6 +1128,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1086,6 +1144,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1134,6 +1193,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1149,6 +1209,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1170,6 +1231,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1185,6 +1247,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1200,6 +1263,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1215,6 +1279,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1230,6 +1295,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1245,6 +1311,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1266,6 +1333,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1293,6 +1361,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1317,6 +1386,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1338,6 +1408,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1362,6 +1433,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1377,6 +1449,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1392,6 +1465,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1407,6 +1481,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1422,6 +1497,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1437,6 +1513,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1464,6 +1541,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1488,6 +1566,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1506,6 +1585,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1524,6 +1604,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "A",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1563,6 +1644,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1599,6 +1681,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1650,6 +1733,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1671,6 +1755,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1695,6 +1780,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1710,6 +1796,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1752,6 +1839,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1788,6 +1876,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1812,6 +1901,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1830,6 +1920,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1845,6 +1936,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1884,6 +1976,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1899,6 +1992,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1938,6 +2032,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1953,6 +2048,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1968,6 +2064,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1983,6 +2080,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -1998,6 +2096,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2013,6 +2112,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2028,6 +2128,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2043,6 +2144,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2058,6 +2160,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2076,6 +2179,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2103,6 +2207,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2118,6 +2223,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2139,6 +2245,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2154,6 +2261,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2181,6 +2289,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2199,6 +2308,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2262,6 +2372,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2277,6 +2388,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2313,6 +2425,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2328,6 +2441,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2364,6 +2478,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2379,6 +2494,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2394,6 +2510,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2415,6 +2532,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2439,6 +2557,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2460,6 +2579,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2475,6 +2595,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2490,6 +2611,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2517,6 +2639,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2544,6 +2667,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2565,6 +2689,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2604,6 +2729,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2634,6 +2760,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2655,6 +2782,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2676,6 +2804,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2703,6 +2832,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2727,6 +2857,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2745,6 +2876,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2772,6 +2904,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2796,6 +2929,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2817,6 +2951,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2865,6 +3000,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2880,6 +3016,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2895,6 +3032,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2916,6 +3054,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2931,6 +3070,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2946,6 +3086,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2964,6 +3105,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -2979,6 +3121,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3003,6 +3146,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3018,6 +3162,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3033,6 +3178,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3048,6 +3194,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3063,6 +3210,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3078,6 +3226,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3093,6 +3242,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3108,6 +3258,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3138,6 +3289,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3153,6 +3305,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3183,6 +3336,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3207,6 +3361,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3222,6 +3377,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3237,6 +3393,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3252,6 +3409,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3273,6 +3431,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3291,6 +3450,7 @@ export const rues = {
         {
             "type": "Feature",
             "properties": "B",
+            "stattype": "rue",
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
@@ -3319,6 +3479,7 @@ export const muni = {
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3363,6 +3524,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3395,6 +3557,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3430,6 +3593,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3462,6 +3626,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3494,6 +3659,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3526,6 +3692,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3558,6 +3725,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3590,6 +3758,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3622,6 +3791,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3654,6 +3824,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3686,6 +3857,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3718,6 +3890,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3750,6 +3923,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3782,6 +3956,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3814,6 +3989,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3843,6 +4019,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3872,6 +4049,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3904,6 +4082,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3933,6 +4112,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3962,6 +4142,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -3994,6 +4175,7 @@ export const muni = {
         },
         {
             "type": "Feature",
+            "stattype": "municipal",
             "properties": {
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -4031,8 +4213,9 @@ export const elec = {
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
+            "stattype": "electrique",
             "properties": {
-              "marker-symbol": "car",
+                "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "Stationnement Mercier",
@@ -4047,8 +4230,9 @@ export const elec = {
         },
         {
             "type": "Feature",
+            "stattype": "electrique",
             "properties": {
-              "marker-symbol": "car",
+                "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "St-Hubert",
@@ -4063,8 +4247,9 @@ export const elec = {
         },
         {
             "type": "Feature",
+            "stattype": "electrique",
             "properties": {
-              "marker-symbol": "car",
+                "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "Centre des Arts",
@@ -4079,8 +4264,9 @@ export const elec = {
         },
         {
             "type": "Feature",
+            "stattype": "electrique",
             "properties": {
-              "marker-symbol": "car",
+                "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "La Plaza de la Mauricie",
@@ -4095,8 +4281,9 @@ export const elec = {
         },
         {
             "type": "Feature",
+            "stattype": "electrique",
             "properties": {
-              "marker-symbol": "car",
+                "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "Usine AddEnergie",
