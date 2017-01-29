@@ -4050,7 +4050,7 @@ export const elec = {
             "properties": {
                 "marker-symbol": "car",
                 "description": "Stationnement avec borne de recharge",
-                "cost": "1$/hre",
+                "cost": "1,00 $ de l'heure",
                 "building": "St-Hubert",
                 "icon": "music"
             },
