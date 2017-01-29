@@ -6,9 +6,9 @@ function getAreaStatus(failedRatio = 0.33){
         return Math.random() >= failedRatio;
     }
 
-    Zone.zoneOrange = getRandomBool();
-    Zone.zoneBleu = getRandomBool();
-    Zone.zoneVert = getRandomBool();
+    Zone.zoneA = getRandomBool();
+    Zone.zoneB = getRandomBool();
+    Zone.zoneC = getRandomBool();
 
     return Zone;
 }

@@ -55,16 +55,20 @@ Meteor.startup(function () {
       }
     });
 
-    map.addSource('rues', {
+    map.addSource('ruesA', {
       "type": "geojson",
       "data": data.cheval
-      });
+    });
+    map.addSource('ruesB', {
+      "type": "geojson",
+      "data": data.cheval
+    });
     map.addLayer({
       "id": "rue",
       "source": "rues",
       "type": "line",
       "paint": {
-        "line-color": "black",
+        "line-color": "red",
         "line-width": 3
       }
     });
