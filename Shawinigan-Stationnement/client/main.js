@@ -20,7 +20,7 @@ function getPosition() {
     if (coord != null)
         return {
             "properties": {
-                "description": "Vous etes ici."
+                "description": "Vous êtes ici."
             },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
@@ -224,13 +224,13 @@ Meteor.startup(function() {
                 case "ruesA":
                     pos = Math.floor(feature.geometry.coordinates.length / 2);
                     popup.setLngLat(feature.geometry.coordinates[pos])
-                        .setHTML("<h2>Zone A<br>Statut: " + (zones.zoneA ? "Permis" : "Interdit")+"</h2>")
+                        .setHTML("<h2>Zone A<br>Statut : " + (zones.zoneA ? "Permis" : "Interdit")+"</h2>")
                         .addTo(map);
                     break;
                 case "ruesB":
                     pos = Math.floor(feature.geometry.coordinates.length / 2);
                     popup.setLngLat(feature.geometry.coordinates[pos])
-                        .setHTML("<h2>Zone B<br>Statut: " + (zones.zoneB ? "Permis" : "Interdit")+"</h2>")
+                        .setHTML("<h2>Zone B<br>Statut : " + (zones.zoneB ? "Permis" : "Interdit")+"</h2>")
                         .addTo(map);
                     break;
                 case "muni":
@@ -261,8 +261,8 @@ Meteor.startup(function() {
 
     createActionCheckbox("Cacher zone A", "rueA");
     createActionCheckbox("Cacher zone B", "rueB");
-    createActionCheckbox("Cacher voitures électrique", "elec");
-    createActionCheckbox("Cacher stationnement municipal", "muni");
+    createActionCheckbox("Cacher voitures électriques", "elec");
+    createActionCheckbox("Cacher stationnements municipaux", "muni");
 
     setInterval(function() { map.getSource('point').setData(getPosition()); }, 1000);
 });

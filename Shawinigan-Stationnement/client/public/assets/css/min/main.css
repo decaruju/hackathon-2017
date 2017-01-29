@@ -397,7 +397,7 @@ header #nav.affix {
 header .navbar-default {
   background: none;
   border: none;
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 20px;
   margin-bottom: 0;
   -webkit-transition: all 0.25s ease-in-out;

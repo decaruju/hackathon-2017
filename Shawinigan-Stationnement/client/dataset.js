@@ -4034,7 +4034,7 @@ export const elec = {
             "properties": {
                 "marker-symbol": "car",
                 "description": "Stationnement avec borne de recharge",
-                "cost": "1$/hre",
+                "cost": "1,00 $ de l'heure",
                 "building": "Stationnement Mercier",
                 "icon": "music"
             },
@@ -4066,7 +4066,7 @@ export const elec = {
             "properties": {
                 "marker-symbol": "car",
                 "description": "Stationnement avec borne de recharge",
-                "cost": "1$/hre",
+                "cost": "1,00 $ de l'heure",
                 "building": "Centre des Arts",
                 "icon": "music"
             },
@@ -4082,7 +4082,7 @@ export const elec = {
             "properties": {
                 "marker-symbol": "car",
                 "description": "Stationnement avec borne de recharge",
-                "cost": "1$/hre",
+                "cost": "1,00 $ de l'heure",
                 "building": "La Plaza de la Mauricie",
                 "icon": "music"
             },
@@ -4098,7 +4098,7 @@ export const elec = {
             "properties": {
                 "marker-symbol": "car",
                 "description": "Stationnement avec borne de recharge",
-                "cost": "1$/hre",
+                "cost": "1,00 $ de l'heure",
                 "building": "Usine AddEnergie",
                 "icon": "music"
             },
