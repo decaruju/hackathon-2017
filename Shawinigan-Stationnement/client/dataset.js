@@ -4033,7 +4033,7 @@ export const elec = {
             "type": "Feature",
             "properties": {
                 "marker-symbol": "car",
-                "description": "Une belle borne",
+                "description": "Stationnement avec borne de recharge",
                 "cost": "1$/hre",
                 "building": "Stationnement Mercier",
                 "icon": "music"
@@ -4049,8 +4049,8 @@ export const elec = {
             "type": "Feature",
             "properties": {
                 "marker-symbol": "car",
-                "description": "Une belle borne",
-                "cost": "1$/hre",
+                "description": "Stationnement avec borne de recharge",
+                "cost": "1,00 $ de l'heure",
                 "building": "St-Hubert",
                 "icon": "music"
             },
@@ -4065,7 +4065,7 @@ export const elec = {
             "type": "Feature",
             "properties": {
                 "marker-symbol": "car",
-                "description": "Une belle borne",
+                "description": "Stationnement avec borne de recharge",
                 "cost": "1$/hre",
                 "building": "Centre des Arts",
                 "icon": "music"
@@ -4081,7 +4081,7 @@ export const elec = {
             "type": "Feature",
             "properties": {
                 "marker-symbol": "car",
-                "description": "Une belle borne",
+                "description": "Stationnement avec borne de recharge",
                 "cost": "1$/hre",
                 "building": "La Plaza de la Mauricie",
                 "icon": "music"
@@ -4097,7 +4097,7 @@ export const elec = {
             "type": "Feature",
             "properties": {
                 "marker-symbol": "car",
-                "description": "Une belle borne",
+                "description": "Stationnement avec borne de recharge",
                 "cost": "1$/hre",
                 "building": "Usine AddEnergie",
                 "icon": "music"
