@@ -48,6 +48,13 @@ function menuclose() {
   });
 }
 
+Template.body.events({
+    'click .refresh-button': function (e) {
+      e.preventDefault();
+      getPosition();
+    }
+  });
+
 Meteor.startup(function() {
   menuclose();
     var geojson;

@@ -23,9 +23,9 @@ html, body{
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 
@@ -168,6 +168,7 @@ body {
   .hide-menu #menu {
     left: 210px;
   }
+
 .mapbox-control-container {
   text-align: center;
   font-size: 24pt;
