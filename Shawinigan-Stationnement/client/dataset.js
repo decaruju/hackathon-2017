@@ -4213,7 +4213,7 @@ export const elec = {
     "type": "FeatureCollection",
     "features": [{
             "type": "Feature",
-            "stattype": "electrique",
+            "stattype": "electric",
             "properties": {
                 "marker-symbol": "car",
                 "description": "Une belle borne",
@@ -4230,7 +4230,7 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "stattype": "electrique",
+            "stattype": "electric",
             "properties": {
                 "marker-symbol": "car",
                 "description": "Une belle borne",
@@ -4247,7 +4247,7 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "stattype": "electrique",
+            "stattype": "electric",
             "properties": {
                 "marker-symbol": "car",
                 "description": "Une belle borne",
@@ -4264,7 +4264,7 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "stattype": "electrique",
+            "stattype": "electric",
             "properties": {
                 "marker-symbol": "car",
                 "description": "Une belle borne",
@@ -4281,7 +4281,7 @@ export const elec = {
         },
         {
             "type": "Feature",
-            "stattype": "electrique",
+            "stattype": "electric",
             "properties": {
                 "marker-symbol": "car",
                 "description": "Une belle borne",
