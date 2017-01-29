@@ -122,12 +122,21 @@ Meteor.startup(function() {
             "data": data.elec
         });
         map.addLayer({
+            "id": "eleccirc",
+            "source": "elec",
+            "type": "circle",
+            "layout": {
+                "circle-color": "green",
+                "circle-radius": 10
+            }
+        });
+        map.addLayer({
             "id": "elec",
             "source": "elec",
             "type": "symbol",
             "layout": {
-              "icon-image": "car-15",
-              //"color": "green"
+                "icon-image": "car-15",
+                //"color": "green"
             }
         });
     });
@@ -155,30 +164,30 @@ Meteor.startup(function() {
             .addTo(map);
     });
 
-  createActionCheckbox("Cacher zone A", "rueA");
-  createActionCheckbox("Cacher zone B", "rueB");
+    createActionCheckbox("Cacher zone A", "rueA");
+    createActionCheckbox("Cacher zone B", "rueB");
 
     setInterval(function() { map.getSource('point').setData(getPosition()); }, 1000);
 });
 
 function createActionCheckbox(text, id) {
-  console.log(text);
-  console.log("ici");
-  var divElm = document.createElement("div");
-  var labelElm = document.createElement("label");
-  var inputElm = document.createElement("input");
-  inputElm.type = "checkbox"
-  divElm.className = "checkbox";
+    console.log(text);
+    console.log("ici");
+    var divElm = document.createElement("div");
+    var labelElm = document.createElement("label");
+    var inputElm = document.createElement("input");
+    inputElm.type = "checkbox"
+    divElm.className = "checkbox";
 
     inputElm.setAttribute("zone", id);
 
 
-  inputElm.onclick = function (e) {
-    var currentZone = this.getAttribute("zone");
-    var current = map.getLayoutProperty(currentZone, "visibility") || "visible";
-    var newProp = (current === "visible") ? "none" : "visible";
-    map.setLayoutProperty(currentZone, 'visibility', newProp);
-  };
+    inputElm.onclick = function(e) {
+        var currentZone = this.getAttribute("zone");
+        var current = map.getLayoutProperty(currentZone, "visibility") || "visible";
+        var newProp = (current === "visible") ? "none" : "visible";
+        map.setLayoutProperty(currentZone, 'visibility', newProp);
+    };
 
     labelElm.appendChild(inputElm);
     labelElm.appendChild(document.createTextNode(text));
