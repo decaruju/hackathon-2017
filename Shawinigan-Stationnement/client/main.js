@@ -125,9 +125,9 @@ Meteor.startup(function() {
             "id": "eleccirc",
             "source": "elec",
             "type": "circle",
-            "layout": {
+            "paint": {
                 "circle-color": "green",
-                "circle-radius": 10
+                "circle-radius": 15
             }
         });
         map.addLayer({
