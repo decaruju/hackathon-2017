@@ -6,33 +6,30 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" type="text/css" href="./public/assets/css/min/main.css">
     <style>
-        body { margin:0; padding:0; }
-        #map { position: absolute; top:0; bottom:0; height:100%; width:100%; }
+        body { margin:0; padding:0; overflow: hidden; }
+        #map { position: absolute;top:0; bottom:0; height:100%; width:75%; }
+        .flex-group {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+        }
 
-        .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    width: 400px;
-    height: 250px;
-    background-color: lightgrey;
-    
-}
-
-.flex-item {
-    background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-}
-
+        .flex-item-1 {
+          order: 1;
+          width: 25%;
+        }
+        .flex-item-2 {
+          order: 2;
+          width: 75%;
+        }
     </style>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="flex-item">
-         <p>stuff</p> 
+    <div class="flex-group">
+        <div class="flex-item-1">
+stuff
         </div>
-        <div class="flex-item">
+        <div class="flex-item-2">
             {{> map}}
         </div>
     </div>
