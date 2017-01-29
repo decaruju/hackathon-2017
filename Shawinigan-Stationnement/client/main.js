@@ -22,7 +22,7 @@ function getPosition() {
         return {
             "properties":{
               "description": "Vous etes ici."
-            }
+            },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
         };
@@ -37,8 +37,8 @@ Meteor.startup(function() {
     var geojson;
     mapboxgl.accessToken = 'pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4MWN0dSJ9.tVz5AQpyWKIxqX_x-FHRpg';
     var bounds = [
-        [-72.782743, 46.525046], // Southwest coordinates
-        [-72.714694, 46.564083] // Northeast coordinates
+        [-72.782743, 46.53], // Southwest coordinates
+        [-72.714694, 46.58] // Northeast coordinates
     ];
     var map = new mapboxgl.Map({
         container: 'map', // container id
@@ -144,7 +144,7 @@ Meteor.startup(function() {
         var feature = features[0];
 
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description)
+            .setHTML(feature.properties.description +"<br>" +feature.properties.cost + "<br>" + feature.properties.building)
             .addTo(map);
     });
 

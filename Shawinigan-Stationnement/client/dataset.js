@@ -4032,7 +4032,9 @@ export const elec = {
     "features": [{
             "type": "Feature",
             "properties": {
-                "description": "Une belle borne<br> 1$/hre",
+                "description": "Une belle borne",
+                "cost": "1$/hre",
+                "building": "Stationnement Mercier",
                 "icon": "music"
             },
             "geometry": {
@@ -4045,7 +4047,9 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
-                "description": "Une belle borne<br> 1$/hre",
+                "description": "Une belle borne",
+                "cost": "1$/hre",
+                "building": "St-Hubert",
                 "icon": "music"
             },
             "geometry": {
@@ -4058,7 +4062,9 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
-                "description": "Une belle borne<br> 1$/hre",
+                "description": "Une belle borne",
+                "cost": "1$/hre",
+                "building": "Centre des Arts",
                 "icon": "music"
             },
             "geometry": {
@@ -4071,13 +4077,30 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
-                "description": "Une belle borne<br> 1$/hre",
+                "description": "Une belle borne",
+                "cost": "1$/hre",
+                "building": "La Plaza de la Mauricie",
                 "icon": "music"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [-72.73899793624878,
                     46.561973411014044
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "Une belle borne",
+                "cost": "1$/hre",
+                "building": "Usine AddEnergie",
+                "icon": "music"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-72.770413,
+                    46.560401
                 ]
             }
         }
