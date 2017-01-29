@@ -22,7 +22,7 @@ function getPosition() {
         return {
             "properties":{
               "description": "Vous etes ici."
-            }
+            },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
         };

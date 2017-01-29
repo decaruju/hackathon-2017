@@ -4,7 +4,7 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
-    <link rel="stylesheet" type="text/css" href="./public/assets/css/min/main.css">
+    
     <style  type="text/css">
         body { 
             margin:0;
@@ -17,16 +17,20 @@
           display: flex;
           flex-direction: row;
           align-items: stretch;
+          
         }
-
-        .flex-item-1 {
-          background-image: url("public/bk-eco.jpg");
+        .flex-group2 {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          width: 20%;
+          justify-content: space-around;
+          background-image: url("\pblic/bk-eco.JPG");
           order: 1;
-          width: 25%;
         }
         .flex-item-2 {
           order: 2;
-          width: 75%;
+          width: 80%;
         }
         .button {
           background-color: #4CAF50; /* Green */
@@ -48,6 +52,15 @@
             color: black; 
             border: 2px solid #4CAF50;
         }
+        .grZone
+        {
+            
+            padding: 20px;   
+        }
+        .checkbox
+        {
+            font-size: large;
+        }
 
 .button:hover {
     background-color: #4CAF50;
@@ -57,12 +70,11 @@
     </style>
 </head>
 <body>
+
     <div class="flex-group">
-        <div class="flex-item-1">
+        <div class="flex-group2">
         <button class="button" style="vertical-align: middle" onclick="funcRefresh"><span><strong>Rafraichir</strong> </span></button>
-
-            <input type="button" onclick="funcRefresh" value="Rafraichir" class="btn btn-default"/>
-
+            <div class="grZone">
             <div id="zoneA" class="checkbox" checked={{callbackZoneA}}>
              <label>
                <input type="checkbox"> Zone A
@@ -78,6 +90,7 @@
              <input type="checkbox"> Zone C
            </label>
          </div>
+            </div>
         </div>
         <div class="flex-item-2">
             {{> map}}
