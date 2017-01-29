@@ -192,15 +192,15 @@ Meteor.startup(function() {
             return oldColorReturn;
         }
 
-        //if (feature.stattype === "electric") {
-        //    popup.setLngLat(feature.geometry.coordinates)
-        //        .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + //feature.properties.building)
-        //        .addTo(map);
-        //} else {
-        //    popup.setLngLat([0, 0])
-        //        .setHTML("feature.stattype")
-        //        .addTo(map);
-        //}
+        if (feature.stattype === "electric") {
+            popup.setLngLat(feature.geometry.coordinates)
+                .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+                .addTo(map);
+        } else {
+            popup.setLngLat([0, 0])
+                .setHTML("feature.stattype")
+                .addTo(map);
+        }
     });
 
     createActionCheckbox("Cacher zone A", "rueA");
