@@ -2,6 +2,7 @@ const MY_ACCESS_TOKEN = 'pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4
 const MY_MAP_ID = 'mapbox.satellite';
 var coord
 
+// console.log(_.where(rows, { type: "a" }));
 
 var radius = 20;
 
