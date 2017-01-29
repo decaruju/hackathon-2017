@@ -1,3 +1,5 @@
+import data from './dataset.js'
+
 const MY_ACCESS_TOKEN = 'pk.eyJ1IjoicG9sZW4iLCJhIjoiY2l5aG9mdWkyMDU2MDJ3b2VoYjF4MWN0dSJ9.tVz5AQpyWKIxqX_x-FHRpg';
 const MY_MAP_ID = 'mapbox.satellite';
 var coord
@@ -6,9 +8,8 @@ var coord
 
 var radius = 20;
 
-function pointOnCircle() {
+function getPosition() {
   coord = Geolocation.latLng();
-  console.log(coord);
   if (coord != null)
   return {
     "type": "Point",
@@ -39,9 +40,10 @@ Meteor.startup(function () {
   var nav = new mapboxgl.NavigationControl();
   map.addControl(nav, 'top-left');
   map.on('load', function (){
+
     map.addSource('point', {
       "type": "geojson",
-      "data": pointOnCircle()
+      "data": getPosition()
     });
     map.addLayer({
       "id": "position",
@@ -52,7 +54,26 @@ Meteor.startup(function () {
         "circle-color": "blue"
       }
     });
+
+    map.addSource('rues', {
+      "type": "geojson",
+      "data": data.cheval
+      });
+    map.addLayer({
+      "id": "rue",
+      "source": "rues",
+      "type": "line",
+      "paint": {
+        "line-color": "black",
+        "line-width": 3
+      }
+    });
   });
 
-  setInterval(function(){map.getSource('point').setData(pointOnCircle());}, 1000);
+  setInterval(function(){map.getSource('point').setData(getPosition());}, 1000);
 })
+
+function refresh()
+{
+
+}
