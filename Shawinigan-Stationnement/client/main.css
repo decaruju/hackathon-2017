@@ -1,3 +1,9 @@
-.mapbox {
-  width: 100px,
+#map {
+  width: 400px;
+  height: 400px;
+}
+
+#geoloc {
+  position: absolute;
+  bottom: 100px;
 }
