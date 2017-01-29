@@ -17,7 +17,6 @@ var popup = new mapboxgl.Popup({
 
 function getPosition() {
     coord = Geolocation.latLng();
-    console.log(coord);
     if (coord != null)
         return {
             "properties": {
