@@ -122,11 +122,8 @@ Meteor.startup(function() {
         map.addLayer({
             "id": "elec",
             "source": "elec",
-            "type": "circle",
-            "paint": {
-                "circle-radius": 10,
-                "circle-color": "green"
-            }
+            "type": "symbol.",
+            "icon-image": "car-15"
         });
     });
 
