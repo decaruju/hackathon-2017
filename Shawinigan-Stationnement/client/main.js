@@ -172,7 +172,7 @@ Meteor.startup(function() {
         function setColor(featureToChange, color){
 
             var oldColorReturn;
-            console.log(featureToChange);
+            
             switch(featureToChange.layer.id){
                 case "rueA":
                 case "rueB":
