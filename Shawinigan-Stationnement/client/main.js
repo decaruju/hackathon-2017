@@ -122,10 +122,10 @@ Meteor.startup(function() {
         map.addLayer({
             "id": "elec",
             "source": "elec",
-            "type": "circle",
-            "paint": {
-                "circle-radius": 10,
-                "circle-color": "green"
+            "type": "symbol",
+            "layout": {
+              "icon-image": "{marker-symbol}-15",
+              //"color": "green"
             }
         });
     });
