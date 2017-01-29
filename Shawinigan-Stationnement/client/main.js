@@ -213,30 +213,40 @@ Meteor.startup(function() {
             switch (feature.layer.source) {
                 case "elec":
                     popup.setLngLat(feature.geometry.coordinates)
-                        .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+                        .setHTML("<h2>" + feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building + "</h2>")
                         .addTo(map);
                     break;
                 case "ruesA":
                     pos = Math.floor(feature.geometry.coordinates.length / 2);
                     popup.setLngLat(feature.geometry.coordinates[pos])
-                        .setHTML("<div style:\"align: center\"><strong>Zone A</strong><br> Statut: " + (zones.zoneA ? "Permis" : "Interdit") + "</div>")
+                        .setHTML("<h2>Zone A<br>Statut: " + (zones.zoneA ? "Permis" : "Interdit")+"</h2>")
                         .addTo(map);
                     break;
                 case "ruesB":
                     pos = Math.floor(feature.geometry.coordinates.length / 2);
                     popup.setLngLat(feature.geometry.coordinates[pos])
-                        .setHTML("Zone B<br> status: " + (zones.zoneB ? "Permis" : "Interdit"))
+                        .setHTML("<h2>Zone B<br>Statut: " + (zones.zoneB ? "Permis" : "Interdit")+"</h2>")
                         .addTo(map);
                     break;
                 case "muni":
-                    pos = Math.floor(feature.geometry.coordinates[0].length / 2);
-                    popup.setLngLat(feature.geometry.coordinates[0][pos])
-                        .setHTML("stationnement municipal")
+                    function ave(array){
+                      console.log(array);
+                      var coord = [0,0];
+                      for (var c of array) {
+                        coord[0] += c[0];
+                        coord[1] += c[1];
+                      }
+                      coord[0] /= array.length;
+                      coord[1] /= array.length;
+                      return coord
+                    }
+                    popup.setLngLat(ave(feature.geometry.coordinates[0]))
+                        .setHTML("<h2>Stationnement municipal</h2>")
                         .addTo(map);
                     break;
                 default:
                     popup.setLngLat([0, 0]) // ICI
-                        .setHTML("feature.stattype")
+                        .setHTML("feature.layer")
                         .addTo(map);
 
             }

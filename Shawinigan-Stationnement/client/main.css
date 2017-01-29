@@ -8,7 +8,6 @@
   bottom: 100px;
 }
 
-
 html, body{
   height:100%;
 }
@@ -145,3 +144,7 @@ body {
   .hide-menu #menu {
     left: 2px;
   }
+.mapbox-control-container {
+  text-align: center;
+  font-size: 24pt;
+}
