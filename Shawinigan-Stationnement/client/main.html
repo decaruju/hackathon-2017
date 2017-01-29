@@ -4,14 +4,41 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="./public/assets/css/min/main.css">
     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+        body { margin:0; padding:0; overflow: hidden; }
+        #map { position: absolute;top:0; bottom:0; height:100%; width:75%; }
+        .flex-group {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+        }
+
+        .flex-item-1 {
+          order: 1;
+          width: 25%;
+        }
+        .flex-item-2 {
+          order: 2;
+          width: 75%;
+        }
     </style>
 </head>
 <body>
-  <input type="checkbox" id="geoloc" value="checkbox1">2<label for="cbox2"></label>
-{{> map}}
+    <div class="flex-group">
+        <div class="flex-item-1">
+            <input type="button" onclick="funcRefresh" value="Rafraichir" class="btn btn-default"/>
+
+            <div class="checkbox">
+             <label>
+               <input type="checkbox"> Check me out
+             </label>
+           </div>
+        </div>
+        <div class="flex-item-2">
+            {{> map}}
+        </div>
+    </div>
 </body>
 
 <template name = "map">
