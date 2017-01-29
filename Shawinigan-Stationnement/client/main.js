@@ -171,24 +171,24 @@ Meteor.startup(function() {
         function setColor(featureToChange, color) {
 
             var oldColorReturn;
-            
-            switch(featureToChange.layer.id){
+
+            switch (featureToChange.layer.id) {
                 case "rueA":
                 case "rueB":
                     oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "line-color");
                     map.setPaintProperty(featureToChange.layer.id, "line-color", color)
                     break;
-                /*case "elec":
-                case "position":
-                    oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
-                    map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
-                    break;*/
+                    /*case "elec":
+                    case "position":
+                        oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
+                        map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
+                        break;*/
                 case "muni":
                     oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
                     map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
                     break;
             }
-            
+
             return oldColorReturn;
         }
 
@@ -198,7 +198,7 @@ Meteor.startup(function() {
                 .addTo(map);
         } else {
             popup.setLngLat(feature.geometry.coordinates)
-                .setHTML(feature.stattype)
+                .setHTML("feature.stattype")
                 .addTo(map);
         }
     });
