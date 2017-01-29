@@ -17,11 +17,10 @@ var popup = new mapboxgl.Popup({
 
 function getPosition() {
     coord = Geolocation.latLng();
-    console.log(coord);
     if (coord != null)
         return {
-            "properties":{
-              "description": "Vous etes ici."
+            "properties": {
+                "description": "Vous etes ici."
             },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
@@ -154,9 +153,6 @@ Meteor.startup(function() {
             activeFeature = feature;
         }
 
-        /*popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description +"<br>" +feature.properties.cost + "<br>" + feature.properties.building)
-            .addTo(map);*/
         function setColor(feature, color){
             var oldColor;
             switch(feature){
@@ -179,6 +175,11 @@ Meteor.startup(function() {
             }
             return oldColor;
         }
+
+        popup.setLngLat(feature.geometry.coordinates)
+            .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+            .addTo(map);
+
     });
 
     Template.body.events({
