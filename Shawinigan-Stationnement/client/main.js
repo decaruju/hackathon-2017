@@ -178,16 +178,17 @@ Meteor.startup(function() {
                     oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "line-color");
                     map.setPaintProperty(featureToChange.layer.id, "line-color", color)
                     break;
-                case "elec":
+                /*case "elec":
                 case "position":
                     oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
                     map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
-                    break;
+                    break;*/
                 case "muni":
                     oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
                     map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
                     break;
             }
+            
             return oldColorReturn;
         }
 
