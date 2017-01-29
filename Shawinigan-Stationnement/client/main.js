@@ -85,10 +85,10 @@ Meteor.startup(function() {
         map.addLayer({
             "id": "position",
             "source": "point",
-            "type": "circle",
-            "paint": {
-                "circle-radius": 10,
-                "circle-color": "blue"
+            "type": "symbol",
+            "layout": {
+              "icon-image": "star-15",
+              "icon-size": 1.5
             }
         });
         map.addSource('ruesA', {
@@ -202,10 +202,6 @@ Meteor.startup(function() {
                         map.setPaintProperty(featureToChange.layer.id, "line-color", color)
                         break;
                         //case "elec":
-                    case "position":
-                        oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "circle-color");
-                        map.setPaintProperty(featureToChange.layer.id, "circle-color", color)
-                        break;
                     case "muni":
                         oldColorReturn = map.getPaintProperty(featureToChange.layer.id, "fill-color");
                         map.setPaintProperty(featureToChange.layer.id, "fill-color", color)
