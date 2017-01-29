@@ -230,7 +230,3 @@ function createActionCheckbox(text, id) {
 
     document.getElementById("actions").appendChild(divElm);
 }
-
-function refresh() {
-
-}
