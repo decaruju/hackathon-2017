@@ -191,16 +191,15 @@ Meteor.startup(function() {
                 return oldColorReturn;
             }
 
-            if (feature.stattype === "electric") {
-                console.log("cheval");
+            if (feature.layer && feature.layer.source === "elec") {
                 popup.setLngLat(feature.geometry.coordinates)
-                    .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
-                    .addTo(map);
+                .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
+                .addTo(map);
             } else {
                 popup.setLngLat([0, 0]) // ICI
-                    .setHTML("feature.stattype")
-                    .addTo(map);
-            }
+                .setHTML("feature.stattype")
+                .addTo(map);
+             }
         });
     });
 
