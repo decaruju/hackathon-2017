@@ -35,7 +35,7 @@ Meteor.startup(function () {
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
     center: [-72.749588, 46.541601], // starting position
-    //maxBounds: bounds,
+    maxBounds: bounds,
     zoom: 14 // starting zoom
   });
 
