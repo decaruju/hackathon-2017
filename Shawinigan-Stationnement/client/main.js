@@ -17,11 +17,10 @@ var popup = new mapboxgl.Popup({
 
 function getPosition() {
     coord = Geolocation.latLng();
-    console.log(coord);
     if (coord != null)
         return {
-            "properties":{
-              "description": "Vous etes ici."
+            "properties": {
+                "description": "Vous etes ici."
             },
             "type": "Point",
             "coordinates": [coord.lng, coord.lat]
@@ -148,9 +147,9 @@ Meteor.startup(function() {
         }
 
         var feature = features[0];
-        
+
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description +"<br>" +feature.properties.cost + "<br>" + feature.properties.building)
+            .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
             .addTo(map);
     });
 
