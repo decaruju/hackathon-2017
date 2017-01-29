@@ -139,7 +139,7 @@ Meteor.startup(function() {
 
         if (!features.length) {
 
-            //activeFeature.paint.fillColor.fill-color = oldColor;
+            setColor(activeFeature, oldColor);
             activeFeature = null;
             popup.remove();
             return;
@@ -148,9 +148,38 @@ Meteor.startup(function() {
 
         var feature = features[0];
 
+        if(feature != activeFeature){
+            oldColor = setColor(feature, "lightgray");
+            activeFeature = feature;
+        }
+
+        function setColor(feature, color){
+            var oldColor;
+            switch(feature){
+                case "rueA":
+                case "rueB":
+                    oldColor = feature["paint"]["line-color"];
+                    feature["paint"]["line-color"] = color;
+                    break;
+                case "elec":
+                case "position":
+                    console.log(feature);
+                    oldColor = feature["paint"]["circle-color"];
+                    feature["paint"]["circle-color"] = "lightgray";
+                    console.log(feature);
+                    break;
+                case "muni":
+                    oldColor = feature["paint"]["fill-color"];
+                    feature["paint"]["fill-color"] = color;
+                    break;
+            }
+            return oldColor;
+        }
+
         popup.setLngLat(feature.geometry.coordinates)
             .setHTML(feature.properties.description + "<br>" + feature.properties.cost + "<br>" + feature.properties.building)
             .addTo(map);
+
     });
 
     Template.body.events({
