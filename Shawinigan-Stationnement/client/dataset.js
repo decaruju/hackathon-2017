@@ -4032,6 +4032,7 @@ export const elec = {
     "features": [{
             "type": "Feature",
             "properties": {
+              "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "Stationnement Mercier",
@@ -4047,6 +4048,7 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
+              "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "St-Hubert",
@@ -4062,6 +4064,7 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
+              "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "Centre des Arts",
@@ -4077,6 +4080,7 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
+              "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "La Plaza de la Mauricie",
@@ -4092,6 +4096,7 @@ export const elec = {
         {
             "type": "Feature",
             "properties": {
+              "marker-symbol": "car",
                 "description": "Une belle borne",
                 "cost": "1$/hre",
                 "building": "Usine AddEnergie",
